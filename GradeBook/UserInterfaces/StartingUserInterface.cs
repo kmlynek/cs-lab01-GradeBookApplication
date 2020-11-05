@@ -40,9 +40,7 @@ namespace GradeBook.UserInterfaces
                 return;
             }
             var name = parts[1];
-            BaseGradeBook gradeBook = new BaseGradeBook(name);
-            Console.WriteLine("Created gradebook {0}.", name);
-            GradeBookUserInterface.CommandLoop(gradeBook);
+            BaseGradeBook gradeBook;
             var gradeBookType = parts[2];
 
             if (gradeBookType == "standard")
